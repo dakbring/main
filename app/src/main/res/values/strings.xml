@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Main Demo</string>
-
-    <string name="list_empty_message">No data</string>
-    <string name="list_error_message">Something went wrong!</string>
-    <string name="list_error_try_again">Please try again later.</string>
-</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="toolbar" type="id" />
+  <item name="toolbar_title" type="id" />
+  <item name="view_holder" type="id" />
+  <item name="tag_empty" type="id" />
+  <item name="tag_error" type="id" />
+  <item name="tag_loading" type="id" />
+  <item name="tag_spacing" type="id" />
+  <item name="tag_append_loading" type="id" />
+  <item name="tag_holder" type="id" />
+  <item name="tag_menu_space" type="id" />
+  <item name="tag_bottom_space" type="id" />
+</resources>

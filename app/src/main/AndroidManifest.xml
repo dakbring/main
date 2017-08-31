@@ -19,6 +19,9 @@
         <activity
             android:name=".screens.DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".screens.CompassActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

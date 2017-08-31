@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.demo.dakbring.maindemo.MainDeviceAdapter;
@@ -21,6 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class DashboardActivity extends BaseActivity implements MainDeviceAdapter.DeviceListListener, OnErrorRetryListener, IFinishable {
 
@@ -60,6 +63,8 @@ public class DashboardActivity extends BaseActivity implements MainDeviceAdapter
         vRecyclerView.setLayoutManager(mLayoutManager);
         vRecyclerView.setAdapter(mWrapperAdapter);
 
+        ((TextView)findViewById(R.id.toolbar_title)).setText("Dakbring");
+
         vRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
@@ -89,6 +94,11 @@ public class DashboardActivity extends BaseActivity implements MainDeviceAdapter
                 }
             }
         });
+    }
+
+    @OnClick(R.id.toolbar_right_icon)
+    void onToolbarRightBtnClick(View v){
+        startActivity(CompassActivity.getIntent(this));
     }
 
     @Override
